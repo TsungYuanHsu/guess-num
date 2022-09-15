@@ -4,8 +4,9 @@
 # If the guess is wrong, print 'Higher or lower than the answer'
 
 import random
-
-r = random.randint(1, 100)
+start = int(input('Please input one number as the smallest number of the range: '))
+end = int(input('Please input one number as the largest number of the range: '))
+r = random.randint(start, end)
 guess_num = 0 # How many times you have guessed
 
 while True:
